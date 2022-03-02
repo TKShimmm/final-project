@@ -1,0 +1,132 @@
+
+/* MAIN */
+
+.container {
+  /* background: red; */
+  height: 800px;
+  position: relative;
+}
+main {
+  background: #4a73f3;
+  height: 670px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+main .main_container {
+  /* background: green; */
+  width: 1180px;
+  height: 670px;
+  margin: 0 auto;
+}
+
+main .main_container img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  /* display: none;   */
+}
+
+.container .main_text_container {
+  background: orange;
+}
+
+.container .main_text_container span:first-child {
+  color: #FFF;
+  width: 580px;
+  line-height: 59.2px;
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  top: 158px;
+}
+
+.container .main_text_container span:last-child {
+  color: #FFF;
+  position: absolute;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26.64px;
+  top: 217px;
+}
+
+.container .main_container .btn {
+  width: 360px;
+  background: #fff;
+  top: 281px;
+  display: block;
+  position: relative;
+  position: absolute;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.container .main_container .btn:hover {
+  background: #0420bf;
+}
+.container .main_container .btn:hover a {
+  color: #FFF;
+}
+
+.container .main_container .btn a{
+  color: #0420bf;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+}
+
+.container .main_container .sub_info {
+  color: #FFF;
+  display: flex;;
+  position: absolute;
+  top: 533px;
+  font-weight: 300;
+  line-height: 29.6px;
+  width: 530px;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+.container .main_container .sub_info .sub_1 span:last-child {
+  font-size: 20px;
+}
+
+.container .main_container .sub_info .sub_2 span:last-child {
+  font-size: 20px;
+}
+
+.container .main_container .sub_info .sub_3 span:last-child {
+  font-size: 20px;
+}
+
+/* NAV */
+
+.container .menu {
+  /* position: relative; */
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  /* background: green; */
+}
+
+.container .menu ul {
+  width: 1180px;
+  /* background: yellow; */
+  display: flex;
+  margin: 20px auto;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+
+.container .menu ul li {
+}
+
+.container .menu ul li a {
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  /* line-height: 24px; */
+  color: #000;
+}
