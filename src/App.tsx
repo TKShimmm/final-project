@@ -1,18 +1,28 @@
 import React from "react";
 import { ReactDOM } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
+import "./index.css";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import HeadMenu from "./components/HeadMenu";
 
-function App() {
+const App = (): JSX.Element => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <AboutPage></AboutPage>
+    </div>
   );
-}
+};
 
 export default App;
+
+// 이렇게 했는데 라우팅이 안되는거 같은데 왜 그럴까요?
+// const App = (): JSX.Element => {
+//   return (
+//       <HeadMenu>
+//         <Routes>
+//           <Route path="/home" element={<Home />} />
+//         </Routes>
+//       </HeadMenu>
+//   );
+// };
