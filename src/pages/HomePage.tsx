@@ -7,7 +7,6 @@ import Navigation from "../components/Navigation";
 const HomePage = () => {
   return (
     <>
-      <HeadMenu></HeadMenu>
       <HomeContents></HomeContents>
       <Navigation></Navigation>
     </>

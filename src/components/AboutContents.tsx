@@ -16,8 +16,9 @@ const AboutContents = () => {
         </Nav>
         <Contents>
           <ContentsSpan>
-            <AboutUnicorn></AboutUnicorn>
-            {/* <AboutLTV></AboutLTV> */}
+            {/* <AboutUnicorn></AboutUnicorn> */}
+            <AboutLTV></AboutLTV>
+            {/* <AboutFAQ></AboutFAQ> */}
           </ContentsSpan>
         </Contents>
       </Container>
@@ -27,6 +28,10 @@ const AboutContents = () => {
     </Base>
   );
 };
+
+const AboutFAQ = styled.div`
+  background-color: #F5F5F5;
+`
 
 const Base = styled.div`
   /* border: 1px solid black; */

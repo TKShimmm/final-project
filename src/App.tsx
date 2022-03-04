@@ -9,12 +9,13 @@ import HeadMenu from "./components/HeadMenu";
 import Navigation from "./components/Navigation";
 import HomeContents from "./components/HomeContents";
 import AboutContents from "./components/AboutContents";
+import Accordion from "./components/About/Accordion"
+import AccordionWrap from "./components/About/AccordionWrap";
 
 const App = (): JSX.Element => {
   return (
     <>
-      <HomePage></HomePage>
-      <AboutPage></AboutPage>
+      <Accordion items={}/>
     </>
   );
 };
