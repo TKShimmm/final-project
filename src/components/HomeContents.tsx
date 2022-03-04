@@ -1,4 +1,5 @@
-// import { Link } from "react-router-dom";
+import React from "react";
+import { ReactDOM } from "react";
 import imgHome from "../img/Home_img.png";
 import styled from "styled-components";
 
@@ -38,6 +39,7 @@ const Base = styled.div`
   background: #4a73f3;
   width: 1440px;
   height: 670px;
+  margin: 0 auto;
   position: relative;
 `;
 

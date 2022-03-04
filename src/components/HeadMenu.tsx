@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { ReactDOM } from "react";
 import LogoImg from "../img/Logo.png";
 import styled from "styled-components";
 

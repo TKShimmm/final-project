@@ -5,10 +5,9 @@ import HeadMenu from "../components/HeadMenu";
 
 const About = () => {
   return (
-    <div>
-      <HeadMenu></HeadMenu>
+    <>
       <AboutContents></AboutContents>
-    </div>
+    </>
   );
 };
 
