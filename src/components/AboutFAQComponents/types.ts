@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export type AccordionData ={
+export type AccordionData = {
   title: string;
   content: ReactNode;
 };

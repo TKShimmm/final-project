@@ -1,37 +1,12 @@
 import React from "react";
-import { ReactDOM } from "react";
 import styled from "styled-components";
 import ImgAbout from "../img/About_img.png";
-import AboutLTV from "./About-LTV";
-import AboutUnicorn from "./About-Unicorn";
-
-const AboutContents = () => {
-  return (
-    <Base>
-      <Container>
-        <Nav>
-          <NavContents>유니콘이란?</NavContents>
-          <NavContents>고객생애가치(LTV)란?</NavContents>
-          <NavContents>FAQ</NavContents>
-        </Nav>
-        <Contents>
-          <ContentsSpan>
-            {/* <AboutUnicorn></AboutUnicorn> */}
-            <AboutLTV></AboutLTV>
-            {/* <AboutFAQ></AboutFAQ> */}
-          </ContentsSpan>
-        </Contents>
-      </Container>
-      <AboutImg>
-        <img src={ImgAbout} alt="About_Image" />
-      </AboutImg>
-    </Base>
-  );
-};
+import AboutLTV from "./AboutComponents/About-LTV-Component";
+import AboutUnicorn from "./AboutComponents/About-Unicorn";
 
 const AboutFAQ = styled.div`
-  background-color: #F5F5F5;
-`
+  background-color: #f5f5f5;
+`;
 
 const Base = styled.div`
   /* border: 1px solid black; */
@@ -75,6 +50,13 @@ const Contents = styled.div`
   top: 48px;
 `;
 
+const Clicked = styled.div`
+  color: #0420bf;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+`;
+
 const ContentsSpan = styled.div`
   font-size: 16px;
   font-weight: 400;
@@ -85,5 +67,27 @@ const AboutImg = styled.div`
   position: absolute;
   bottom: 0;
 `;
+
+const AboutContents = () => {
+  return (
+    <Base>
+      <Container>
+        <Nav>
+          <Clicked>유니콘이란?</Clicked>
+          <NavContents>고객생애가치(LTV)란?</NavContents>
+          <NavContents>FAQ</NavContents>
+        </Nav>
+        <Contents>
+          <ContentsSpan>
+            <AboutUnicorn />
+          </ContentsSpan>
+        </Contents>
+      </Container>
+      <AboutImg>
+        <img src={ImgAbout} alt="About_Image" />
+      </AboutImg>
+    </Base>
+  );
+};
 
 export default AboutContents;
