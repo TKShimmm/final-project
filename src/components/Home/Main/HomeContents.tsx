@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactDOM } from "react";
-import imgHome from "../img/Home_img.png";
+import imgHome from "../../../assets/img/Home_img.svg";
 import styled from "styled-components";
 
 const Home = (props: any) => {

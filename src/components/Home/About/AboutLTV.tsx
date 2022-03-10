@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import ImgAbout from "../img/About_img.png";
-import AboutLTV from "./AboutComponents/About-LTV-Component";
-import AboutUnicorn from "./AboutComponents/About-Unicorn";
-import FAQConponents from "./AboutFAQComponents/FAQComponents"
-import FAQComponents from "./AboutFAQComponents/FAQComponents"
+import AboutLTV from './AboutComponentsContents/About-LTV-Component';
+import AboutUnicorn from "./AboutComponentsContents/About-Unicorn";
+
+
 
 const AboutFAQ = styled.div`
   background-color: #F5F5F5;
@@ -12,9 +12,8 @@ const AboutFAQ = styled.div`
 
 const Base = styled.div`
   /* border: 1px solid black; */
-  background: #F5F5F5;
   width: 1440px;
-  height: 1050px;
+  height: 600px;
   margin: 0 auto;
   position: relative;
 `;
@@ -59,11 +58,6 @@ const ContentsSpan = styled.div`
   line-height: 28px;
 `;
 
-const AboutImg = styled.div`
-  position: absolute;
-  bottom: 0;
-`;
-
 const Clicked = styled.div`
   color: #0420bf;
   font-size: 20px;
@@ -77,12 +71,12 @@ const AboutContents = () => {
       <Container>
         <Nav>
           <NavContents>유니콘이란?</NavContents>
-          <NavContents>고객생애가치(LTV)란?</NavContents>
-          <Clicked>FAQ</Clicked>
+          <Clicked>고객생애가치(LTV)란?</Clicked>
+          <NavContents>FAQ</NavContents>
         </Nav>
         <Contents>
           <ContentsSpan>
-            <FAQComponents/>
+            <AboutLTV/>
           </ContentsSpan>
         </Contents>
       </Container>

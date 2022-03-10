@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { ReactDOM } from "react";
-import LogoImg from "../img/Logo.png";
+import LogoImg from "../../../assets/img/Logo.svg";
 import styled from "styled-components";
 
 const HeadMenu = (props:any) => {
@@ -34,7 +34,7 @@ const HeaderImg = styled.img.attrs({
   display: block;
   margin: auto 0;
   padding: 130px;
-  height: 18.23px;
+  /* height: 18.23px; */
 `;
 
 const Menu = styled.div`
